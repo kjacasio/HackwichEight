@@ -45,13 +45,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Zhg-rI-LUA">
-                                <rect key="frame" x="284" y="171" width="329" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="slidermoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="hOB-IA-Pky"/>
-                                </connections>
-                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYH-MT-9Bo">
                                 <rect key="frame" x="619" y="171" width="71" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -59,6 +52,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Zhg-rI-LUA">
+                                <rect key="frame" x="284" y="171" width="329" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="slidermoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="hOB-IA-Pky"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -66,9 +66,9 @@
                     <connections>
                         <outlet property="numberLabel" destination="Sym-oe-54W" id="zHq-uh-Vcu"/>
                         <outlet property="onehundred2Label" destination="fYH-MT-9Bo" id="lvb-xC-B6w"/>
-                        <outlet property="onehundredLabel" destination="xaj-ht-MNI" id="ro5-3D-9UM"/>
                         <outlet property="slideLabel" destination="5N2-m0-Q4O" id="w7a-YN-XAJ"/>
                         <outlet property="slider" destination="Zhg-rI-LUA" id="Oyo-9j-Aoy"/>
+                        <outlet property="targetLabel" destination="xaj-ht-MNI" id="GFs-aM-Y6s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
